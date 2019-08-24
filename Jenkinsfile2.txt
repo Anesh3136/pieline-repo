@@ -1,0 +1,17 @@
+pipeline{
+   agent {label 'slave01'}
+      stages{
+         stage("stage1"){
+           steps{
+              echo "second job"
+
+             }
+            }
+            stage ("stage 2"){
+            steps{
+               echo "third job"
+
+               }
+             }
+           }
+        }
